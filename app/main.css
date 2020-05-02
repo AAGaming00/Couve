@@ -1,11 +1,17 @@
-
 /*
     *** Code starts ***
 */
 
+/* Font Importing */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
 /* Dark/Light vars */
-.theme-dark{
-    /*BGs*/
+.theme-dark    /*BGs*/
     --colornav: #060c24;
     --color1: #1e2337;
     --color2: #252a3e;
@@ -19,14 +25,6 @@
 }
 
 /* Light vars soon™️ */
-
-/* Font Importing */
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-}
 
 /* no dividers thx */
 
