@@ -1,0 +1,25 @@
+/* Settings */
+:root{
+    /* Colors */
+    --main-color: #419e85;
+
+    /*Borders*/
+    --avatar-radius: 5px;
+}
+
+/* Dark/Light vars */
+.theme-dark{
+    /*BGs*/
+    --colornav: #060c24;
+    --color1: #1e2337;
+    --color2: #252a3e;
+    --color3: #1e2539;
+    --color4: #1b1d31;
+    /*Cards*/
+    --card: #212332;
+    /*Other stuff*/
+    --textcolor: #fff;
+    --epicshadow1: #fff3;
+}
+
+/* Light vars soon™️ */
