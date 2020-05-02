@@ -59,6 +59,12 @@
     display: none;
 }
 
+.expandedFolderBackground-2sPsd-, .folder-21wGz3, .folder-21wGz3:hover{
+    background: var(--color1);
+    left:26px
+}
+
+
 .unreadMentionsIndicatorBottom-BXS58x, .unreadMentionsIndicatorTop-gA6RCh{
     width: calc(100% - 10px);
     height: 30px;
