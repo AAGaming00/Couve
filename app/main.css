@@ -279,49 +279,64 @@
 
 /*Reorganizing stuff*/
 
-.container-PNkimc{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: /*yes i dont handle very well with grids*/
-    "notice"
-    "serverheader"
-    "etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc""etc";
+.container-PNkimc > div:nth-last-child(5){
+    margin-top: 110px;
 }
 
-.channelNotice-3DDmsB{
-    width: 160px;
-    grid-area: notice;
+:root .channelNotice-1-XFjC{
+    width: 170px;
     background:transparent;
-    margin: 20px;
+    margin: 15px;
+    padding: 20px;
     background: var(--color2);
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.channelNotice-3DDmsB::before{
-    content: "";
+    box-shadow: unset;
     position: absolute;
-    bottom:50%;
-    left:50%;
-    background-image: url('https://cdn.discordapp.com/attachments/539180316447997974/713846081590394880/boost.svg');
-    opacity: .7;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    transition: opacity 200ms;
-    transform: translateX(-50%);
+    top:0;
+    z-index: 10;
+    height: 60px;
+    transition: height 400ms;
 }
 
-.channelNotice-3DDmsB:hover::before{
+.message-3SOT5P{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+}
+
+.channelNotice-1-XFjC::before{
+    content: "announcement";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    color: #fff;
+    z-index: 1;
+    font-size: 24px;
+    font-family: "Material Icons", sans-serif;
+    transition: opacity 200ms;
+}
+
+:root .channelNotice-1-XFjC:hover{
+    height: 160px;
+}
+
+:root .channelNotice-1-XFjC:hover .message-3SOT5P{
+    pointer-events: all;
+    opacity: 1;
+}
+
+.channelNotice-1-XFjC:hover::before{
     opacity: 0;
 }
 
-:root .checkStatusButton-2voZW3, :root .checkStatusButton-2voZW3:hover{
+:root .message-3SOT5P .btn-11C5_u, :root .message-3SOT5P .btn-11C5_u:hover{
     background: var(--color4);
     margin: 0 auto;
     margin-top: 20px;
@@ -329,27 +344,8 @@
     width: unset;
 }
 
-.message-39hdqk{
-    margin-top: 20px;
-    width: unset;
-    left:0;
-    opacity: 0;
-    background-color: var(--color2);
-    transition: opacity 200ms;
-    transition-delay: 200ms;
-    z-index: 1;
-}
-
-.channelNotice-3DDmsB:hover .message-39hdqk{
-    opacity: 1;
-}
-
-.container-2Rl01u.clickable-2ap7je{
-    grid-area: serverheader;
-}
-
-.scrollerWrap-2lJEkd, .container-PNkimc > .positionedContainer-l-ZqRq, .unreadBottom-3hWQ7c{
-    grid-area: etc;
+.message-3SOT5P > div{
+    margin-bottom: auto;
 }
 
 /*Members*/
@@ -384,7 +380,7 @@
 }
 
 /*Typing bar*/
-.children-19S4PO:after{
+:root .children-19S4PO:after{
     background: linear-gradient(90deg,transparent 0,var(--color2));
 }
 
@@ -404,7 +400,7 @@
     background-color: var(--epicshadow1) !important;
 }
 
-.form-2fGMdU:before{
+:root .form-2fGMdU:before{
     background: linear-gradient(180deg,transparent 0,var(--color2));
 }
 
@@ -859,10 +855,10 @@ html:not(.platform-linux) body:not(.maximized) .scrollerWrap-1IAIlv::before{
         "icon description";
 }
 
-:root .customStatusItem-1TTIxM{
+:root .customStatusWithEmoji-8-XZ8I{
     grid-template-areas:
-        "clear status";
-    grid-template-columns: 20px 1fr;
+        "icon status clear";
+    grid-template-columns: 26px 1fr 40px;
 }
 
 .clearStatusIcon-3-MDNF{
@@ -1254,6 +1250,10 @@ html:not(.platform-linux) body:not(.maximized) .scrollerWrap-1IAIlv::before{
 
 /*Body*/
 
+:root .body-3iLsc4, :root .footer-1fjuF6{
+    background: transparent;
+}
+
 .role-2irmRk{
     position: relative;
     overflow: hidden;
@@ -1286,12 +1286,30 @@ html:not(.platform-linux) body:not(.maximized) .scrollerWrap-1IAIlv::before{
     border: none;
 }
 
+/*Player*/
+.userPopout-3XzG_A .bar-3urHkF{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    pointer-events: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+.userPopout-3XzG_A .barInner-3NDaY_{
+    background: #fff2;
+    border-radius: 0;
+}
+
 /*USRBG*/
 .userPopout-3XzG_A .header-2BwW8b{
 	transform:translateZ(0);
 }
 
-.userPopout-3XzG_A .wrapper-3t9DeA::after {
+.userPopout-3XzG_A .wrapper-3t9DeA::after{
 	content: '';
 	position: fixed;
 	top: 0;
@@ -1300,7 +1318,7 @@ html:not(.platform-linux) body:not(.maximized) .scrollerWrap-1IAIlv::before{
 	height: 100%;
 	z-index: -1;
 	pointer-events: none;
-	opacity: .8;
+	opacity: 1;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: var(--user-popout-position) center;
@@ -1384,6 +1402,20 @@ html:not(.platform-linux) body:not(.maximized) .scrollerWrap-1IAIlv::before{
     padding-top: 56px;
 }
 
+/*Tutorial*/
+.tutorial-i_drPV{
+    background: var(--color2);
+}
+
+.tutorial-i_drPV{
+    margin-top: 66px;
+}
+
+.tutorialIcon-G9i5Ne{
+    background: var(--color1);
+    color: #fff;
+}
+
 /*Card*/
 .channelHeader-3Gd2xq{
     background: transparent;
@@ -1433,6 +1465,102 @@ html:not(.platform-linux) body:not(.maximized) .scrollerWrap-1IAIlv::before{
 .footer-1kmXd4{
     background: transparent;
 }
+
+/* User Modal */
+
+.root-SR8cQa{
+    background: transparent;
+    width: 800px;
+    flex-direction: row;
+    overflow: unset;
+}
+
+/*Header*/
+.topSectionNormal-2-vo2m, .topSectionSpotify-1lI0-P{
+    background: var(--color1);
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}
+
+.headerFill-adLl4x{
+    background: transparent;
+}
+
+.activityHeader-1PExlk{
+    display: none;
+}
+
+.activity-1ythUs{
+    position: absolute;
+    bottom:18px;
+    right: 18px;
+    padding: 0;
+}
+
+.header-QKLPzZ .button-38aScr{
+    position: absolute;
+    bottom:18px;
+    z-index: 1;
+    left: 18px;
+}
+
+.header-QKLPzZ .button-38aScr + div{
+    position: absolute;
+    bottom: 22px;
+    right: calc(22px + 60%);
+}
+
+.tabBarContainer-1s1u-z{
+    border-top: unset;
+}
+
+.tabBar-2MuP6-{
+    flex-direction: column;
+}
+
+.top-28JiJ- .item-PXvHYJ{
+    height: 40px;
+    border-bottom: unset;
+}
+
+/*Player*/
+
+.assetsLargeImageActivityFeed-25vA7H, .assetsLargeImageActivityFeedXbox-3Tr-tf, .assetsLargeImageProfile-3YXDex{
+    width: 40px;
+    height: 40px;
+}
+
+.activityProfile-2bJRaP{
+    right: unset;
+    bottom:-140px;
+    left:5px;
+    width: 750px;
+    padding: 20px;
+}
+
+.state-Tt0LO3{
+    display: none;
+}
+
+/*Body*/
+
+.body-3ND3kc{
+    background: var(--color2);
+    width: 60%;
+    min-height: 350px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*those userinfo plugins*/
+
+.user-details-text{
+    position: absolute;
+    top:-70px;
+    right:10px;
+}
+
+
+
 
 /*
   ==> Keyframes <==
