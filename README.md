@@ -1,5 +1,6 @@
 # Couve
-h
+A Discord theme
+<img align="center" src="https://cdn.discordapp.com/attachments/539180316447997974/725363809044135956/unknown.png"></img>
 
 ## Installation
 ### Powercord
@@ -13,3 +14,6 @@ git clone https://github.com/A-User-s-Discord-Themes/couve-git-clone-pc-repo
 * Go on https://raw.githubusercontent.com/A-User-s-Discord-Themes/Couve/master/download/betterdiscord/couve.theme.css
 * Press `ctrl + s` to download the file
 * Save in the BetterDiscord Theme folder (need help? [click here](https://0x71.cc/bd/guide/#installthemesplugins))
+
+## Links
+[Server](https://discord.gg/jGmSTkk)
