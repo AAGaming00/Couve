@@ -1,6 +1,6 @@
 # Couve
 A Discord theme
-<img align="center" src="https://cdn.discordapp.com/attachments/539180316447997974/725363809044135956/unknown.png"></img>
+<img align="center" src="https://cdn.discordapp.com/attachments/539180316447997974/725737819015872562/unknown.png"></img>
 
 ## Installation
 ### Powercord
