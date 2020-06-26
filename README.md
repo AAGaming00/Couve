@@ -1,4 +1,4 @@
-![Discord](https://discordapp.com/api/guilds/662100872406499348/embed.png)
+![GitHub](https://img.shields.io/github/license/A-User-s-Discord-Themes/Couve?style=flat-square) ![Discord](https://discordapp.com/api/guilds/662100872406499348/embed.png)
 # Couve
 A Discord theme
 <img align="center" src="https://cdn.discordapp.com/attachments/539180316447997974/725737819015872562/unknown.png"></img>
