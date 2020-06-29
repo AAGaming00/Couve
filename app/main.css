@@ -812,13 +812,13 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 }
 
 .platform-osx .wrapper-1Rf91z .scroller-2TZvBN{
-    padding-top: 32px;
+    padding-top: 40px;
 }
 
 .platform-osx .wrapper-1Rf91z::after{
     content: "";
     position: absolute;
-    height: 64px;
+    height: 32px;
     width: 100%;
     top:0;
     left:0;
