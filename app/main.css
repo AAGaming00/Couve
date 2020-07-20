@@ -567,6 +567,10 @@
     background: var(--cardhov);
 }
 
+:root .body-1ld4H7{
+    background: var(--color3);
+}
+
 .itemCard-v9viV7:first-of-type{
     margin-top: 16px;
 }
@@ -815,10 +819,13 @@
 }
 
 .searchBar-3dMhjb{
-    width: 200px;
     height: 28px;
     background: var(--color2);
     padding: 2px 10px;
+}
+
+.searchBar-3dMhjb, .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb{
+    width: 200px;
 }
 
 /*Messages*/
@@ -879,6 +886,36 @@
 
 .channelTextArea-rNsIhG .blockquoteContainer-U5TVEi blockquote{
     background: var(--color2);
+}
+
+/*Server invite*/
+
+:root .wrapper-35wsBm{
+    background: var(--color1);
+    border-radius: 10px;
+}
+
+.wrapper-35wsBm .header-2BTCnc{
+    display: none;
+}
+
+.count-30T-5k{
+    font-weight: 500;
+    color: var(--textcolor);
+}
+
+.markup-2BOw-j code{
+    background: var(--color1);
+    border: none;
+    border-radius: 10px;
+}
+
+.hljs .powercord-lines:after, .powercord-codeblock-lang{
+    border: none;
+}
+
+.powercord-codeblock-lang{
+    padding: 3px 10px;
 }
 
 /*New Messages*/
@@ -1162,6 +1199,11 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
     box-shadow: 0 0 0 3px var(--epicshadow1);
 }
 
+:root .value-2hFrkk:after{
+    box-shadow: none;
+    border-radius: 50%;
+}
+
 .themeDefault-24hCdX.valueChecked-m-4IJZ{
     background: var(--main-color);
 }
@@ -1186,16 +1228,171 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
     stroke: transparent;
 }
 
+:root .bar-2Qqk5Z{
+    background: var(--color4);
+}
+
+.barFill-23-gu-{
+    background: var(--main-color);
+}
+
+.grabber-3mFHz2{
+    box-shadow: none;
+    height: 16px;
+    width: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+    border-radius: 50%;
+}
+
+.cardPrimaryOutline-29Ujqw{
+    border: none;
+    background: var(--color1);
+    border-radius: 10px;
+}
+
+.accountBtn-2Nozo3 .accountBtnInner-sj5jLs{
+    background-color: transparent;
+}
+
+:root .connection-1fbD7X{
+    box-shadow: none;
+}
+
+.connectionHeader-2MDqhu{
+    border-bottom: none;
+    background: transparent;
+}
+
+.connectionDelete-2Odoln{
+    border-color: transparent;
+    border-radius: 50%;
+    transition: background 100ms;
+}
+
+.connectionDelete-2Odoln:hover{
+    background: #fff2;
+}
+
+:root .codeRedemptionRedirect-1wVR4b{
+    background: var(--color1);
+    border: none;
+}
+
+.cardWrapper-2Min21{
+    transform: translateZ(0);
+    overflow: hidden;
+    background: var(--color1);
+}
+
+.icon-3o6xvg::before{
+    content: "";
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: .25;
+}
+
+:root .gemIndicatorContainer-2jdECl{
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.input-cIJ7To{
+    border:none;
+    background: var(--color4);
+    transition: background .4s;
+}
+
+.input-cIJ7To.focused-1mmYsC, .input-cIJ7To:focus{
+    background: var(--color1);
+}
+
+.membershipDialog-rVL-t_{
+    border-radius: 10px;
+    background: var(--color1);
+}
+
+.membershipDialog-rVL-t_:after{
+    left:5px;
+}
+
+.videoWrapper-3YdgHH{
+    background: transparent;
+}
+
+.videoWrapper-3YdgHH iframe{
+    margin: auto;
+    border-radius: 10px;
+}
+
+.css-1a8reka-control, .css-2yldzf-control, .css-1yegjoj-control{
+    background: var(--color1);
+    border: none !important;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.css-n57xjs-menu{
+    background: var(--color1);
+    border:none;
+    border-radius: 7px;
+    margin-top: -7px;
+}
+
+.css-12o7ek3-option{
+    background: var(--color4)
+}
+
+:root .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC{
+    background: var(--color1);
+    border: none;
+    border-radius: 7px;
+}
+
+.userSettingsVoice-iwdUCU .media-engine-video{
+    border-radius: 10px;
+}
+
+.notificationSettings-1NQKPR{
+    max-width: unset;
+}
+
+.wrapper-3jrx9n{
+    border: none;
+    background: var(--color1);
+    border-radius: 20px;
+}
+
+.option-n0icdO{
+    margin:10px;
+    border-radius: 16px;
+    background: var(--epicshadow1);
+}
+
+.option-n0icdO:hover{
+    background: var(--main-color);
+    opacity: .4;
+}
+
+.selected-mKYnfr.option-n0icdO{
+    background: var(--main-color);
+    box-shadow: unset;
+}
+
 /*when you print the settings page and u forget to blur the email™️*/
 
 .userInfoViewing-16kqK3 .flex-1xMQg5 .flexChild-faoVW3 .marginBottom20-32qID7 + div .selectable-2GY4I1{
     filter: blur(5px);
-    -webkit-filter: blur(5px);
     transition: filter .5s;
-    -webkit-transition: filter .5s;
-    -moz-transition: filter .5s;
-    -ms-transition: filter .5s;
-    -o-transition: filter .5s;
 }
 
 .userInfoViewing-16kqK3 .flex-1xMQg5 .flexChild-faoVW3 .marginBottom20-32qID7 + div .selectable-2GY4I1:hover{
@@ -1216,6 +1413,26 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 
 .side-8zPYf6 .item-PXvHYJ:hover{
     background: var(--color3);
+}
+
+.socialLinks-3jqNFy{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.powercord-pc-icon::before{
+    top:0;
+    width: 20px;
+    height: 16px;
+}
+
+.powercord-pc-icon svg{
+    border: none;
+}
+
+.info-1VyQPT{
+    text-align: center;
 }
 
 /* Specific menus */
@@ -1503,6 +1720,14 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 
 .wrapper-1rqM3x{
     margin-bottom: 8px;
+}
+
+.categoryItemDefaultCategorySelected-_HCKoz, .categoryItemDefaultCategorySelected-_HCKoz:hover{
+    background: var(--color2);
+}
+
+.navButtonActive-1MkytQ{
+    background: var(--color2);
 }
 
 /*Resizing*/
@@ -2244,7 +2469,26 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 
 /*Card*/
 :root .ctaBar-2UsjF2{
+    transform: translateZ(0);
+    overflow: hidden;
     background: var(--color1);
+    border-radius: 10px;
+}
+
+.ctaBar-2UsjF2 .guildIcon-3raYf3::after{
+    content: "";
+    position: absolute;
+    top:-4px;
+    left:-4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .5;
 }
 
 /*Slide*/
