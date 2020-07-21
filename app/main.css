@@ -1285,7 +1285,7 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
     background: var(--color1);
 }
 
-.icon-3o6xvg::before{
+.cardWrapper-2Min21 .icon-3o6xvg::before{
     content: "";
     position: fixed;
     top:0;
@@ -2469,26 +2469,8 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 
 /*Card*/
 :root .ctaBar-2UsjF2{
-    transform: translateZ(0);
-    overflow: hidden;
     background: var(--color1);
     border-radius: 10px;
-}
-
-.ctaBar-2UsjF2 .guildIcon-3raYf3::after{
-    content: "";
-    position: absolute;
-    top:-4px;
-    left:-4px;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    background-image: inherit;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 50%;
-    z-index: -1;
-    opacity: .5;
 }
 
 /*Slide*/
