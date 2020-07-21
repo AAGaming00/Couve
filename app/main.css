@@ -828,6 +828,69 @@
     width: 200px;
 }
 
+/*Search Wrapper*/
+.searchResultsWrap-3-pOjs{
+    background: var(--color1);
+    top: -48px;
+    padding-top: 48px;
+    height: 100%;
+}
+
+.scroller-3GIiMh{
+    padding: 0;
+    padding-top: 48px;
+}
+
+.scroller-3GIiMh > div{
+    padding: 0 14px 0 20px;
+}
+
+.searchResultMessage-1fxgXh.sibling-1eJVjd{
+    display: none;
+}
+
+.searchResult-9tQ1uo:after, .searchResult-9tQ1uo:before{
+    display: none;
+}
+
+.channelSeparator-1DOiGt{
+    display: flex;
+    justify-content: center;
+}
+
+.channelSeparator-1DOiGt:before{
+    display: none;
+}
+
+.channelName-1JRO3C{
+    background: transparent;
+    padding: 8px 0;
+}
+
+.searchResultMessage-1fxgXh.hit-1fVM9e{
+    background: var(--color2);
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.jumpButton-JkYoYK{
+    background: var(--color1);
+    font-size: 12px;
+    height: unset;
+    padding: 4px 8px;
+}
+
+.searchHeader-2XoQg7{
+    position: absolute;
+    width: calc(100% - 40px);
+    background: linear-gradient(180deg, var(--color1), transparent);
+}
+
+.tab-2j5AEF.selected-2LAck8, .tab-2j5AEF:hover{
+    border-bottom: unset;
+}
+
 /*Messages*/
 
 .avatar-1BDn8e{
