@@ -788,7 +788,7 @@
 
 /*Top bar*/
 .container-1r6BKw{
-    width: calc(100% - 250px)
+    width: calc(100% - 240px);
 }
 
 .membersWrap-2h-GB4{
@@ -1105,6 +1105,14 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 
 .appMount-3lHmkl{
     background: var(--colornav);
+}
+
+.platform-win .app-1q1i1E > div:nth-last-child(2) .content-98HsJk::before{
+    border-radius: 8px 0 0;
+}
+
+.platform-win .app-1q1i1E > div:nth-last-child(2) .search-36MZv-, .platform-win .app-1q1i1E > div:nth-last-child(2) .inner-2P4tQO{
+    top: 80px;
 }
 
 /*Dates*/
@@ -2412,7 +2420,6 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
 :root .modal-yWgWj-, :root .root-1gCeng{
     background: var(--color2);
     box-shadow: unset;
-    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -2435,6 +2442,8 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
     padding: 0;
     min-height: 45px;
     border-radius: 0;
+    overflow: hidden;
+    border-radius:  0 0 10px 10px;
 }
 
 :root .footer-2gL1pp > button{
@@ -2681,6 +2690,36 @@ html:not(.platform-linux) body:not(.maximized).transparent .appMount-3lHmkl{
     background: var(--color1);
 }
 
+/* No Internet */
+.app-1q1i1E > div:nth-child(2){
+    display: none;
+}
+
+.app-1q1i1E > div:nth-last-child(2) .content-98HsJk{
+    top: 30px;
+    background: var(--color2);
+    transition: top 200ms;
+    position: relative;
+}
+
+.app-1q1i1E > div:nth-last-child(2) .content-98HsJk::before{
+    content: "Disconnected. Reconnect to keep the conversation going.";
+    position: absolute;
+    top: -30px;
+    left:0px;
+    width: 100%;
+    height: 30px;
+    background: #f04747;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.app-1q1i1E > div:nth-last-child(2) .search-36MZv-, .app-1q1i1E > div:nth-last-child(2) .inner-2P4tQO{
+    top: 30px;
+}
 
 /*
   ==> Keyframes <==
